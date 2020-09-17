@@ -57,7 +57,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter: 
-  username               : &twitter
+  username               : &twitter "VarusJZ"
 facebook:
   username               :
   app_id                 :
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Zhi Jing"
   avatar           : "profile.png"
-  bio              : "An undergraduate who knows nothing. Coding & Music.<br> <br>Varus is my Eng name.<br> <br>🇨🇳"
+  bio              : "An undergraduate who knows nothing. <br> <br>Coding & Music. <br> <br>Varus is my Eng name.<br> <br>🇨🇳"
   location         : "Guangzhou, Guangdong, China"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
