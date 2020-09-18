@@ -1,7 +1,7 @@
 ---
 title: 'Musical Review on Folklore by Taylor Swift'
 date: 2020-09-18
-permalink: /posts/2020/09/folklore_review/
+permalink: /posts/2020/09/folklore-review/
 tags:
   - personal
   - music
@@ -9,7 +9,7 @@ tags:
 
 This is a sample blog post. Lorem ipsum I can't remember the rest of lorem ipsum and don't have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.
 
-Reviews
+Reviews by JZ
 ======
 
 You can have many headings
