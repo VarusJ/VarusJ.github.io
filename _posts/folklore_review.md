@@ -1,7 +1,7 @@
 ---
 title: 'Musical Review on Folklore by Taylor Swift'
 date: 2020-09-18
-permalink: /posts/2020/09/blog-post-1/
+permalink: /posts/2020/09/folklore_review/
 tags:
   - personal
   - music
