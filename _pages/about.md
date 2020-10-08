@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a junior in School of Data Science and Computer of Sun Yat-sen University. This is my personal homepage. 
+I am a junior in School of Data and Computer Science of Sun Yat-sen University. This is my personal homepage. 
 I love doing research, coding and making music.<br>
 (upted on 09/17/2020)
 
