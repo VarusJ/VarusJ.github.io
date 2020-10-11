@@ -53,10 +53,10 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 ```
 java -version
 ```
-可以查看是否安装成功，比如在我的台式机上
-![java_version](../images/java_version_win.png)   
+可以查看是否安装成功，比如在我的台式机上  
+![java_version](https://github.com/VarusJ/VarusJ.github.io/blob/master/images/java_version_win.png)   
 在笔记本上  
-![java_version](../images/java_version_mac.png)  
+![java_version](https://github.com/VarusJ/VarusJ.github.io/blob/master/images/java_version_mac.png)  
 实训的 part1 更多的是在台式机上自己配置完成的。
 
 - Java 介绍  
@@ -79,8 +79,8 @@ Java 是当前最火热的语言之一，常年制霸 TIOBE 榜榜首，它有�
       }
   }        
 ```
-然后我们在命令行输入 java helloworld.java 进行结果输出，可以看到我们成功的输出了 helloworld：
-![helloworld](../images/helloworld_2.png)
+然后我们在命令行输入 java helloworld.java 进行结果输出，可以看到我们成功的输出了 helloworld：  
+![helloworld](https://github.com/VarusJ/VarusJ.github.io/blob/master/images/helloworld_2.png)
 
 
 ----
@@ -174,9 +174,9 @@ Ant 是 Java 的生成工具，类似于 Unix 中的 Make 工具用来编译、�
 ```
 这里就是一系列要完成的操作（任务）了，name 为任务名，depends 为依赖，这个和 make 一样的，先执行依赖，再开始任务的操作。  
 这就是 helloworld 的 build 文件的设计，我们来输出看看结果：  
-- 首先用命令 ant （自动寻找目录下的 build.xml 并执行 default 设置的操作）
+- 首先用命令 ant （自动寻找目录下的 build.xml 并执行 default 设置的操作）  
 ![ant_build](../images/ant_build.png)
-- 我们再用 ant junit 来尝试测试：  
+- 我们再用 ant junit 来尝试测试：   
 ![ant_version](../images/ant_junit.png)
 
 可以看到这里我成功的完成了任务。
@@ -243,22 +243,22 @@ JUnit 还给出了很多丰富的功能：赛程（Fixtures）、测试套件(Te
 **5. 提交代码成果**
 
 - helloworld  
-上文已经有展示过 windows 命令行下用 Ant 的运行结果了，这里展示直接在 IDEA 的运行结果：  
-![hw](../images/helloworld.png)
-![hw_test](../images/hw_test.png)
+上文已经有展示过 windows 命令行下用 Ant 的运行结果了，这里展示直接在 IDEA 的运行结果：   
+![hw](../images/helloworld.png)  
+![hw_test](../images/hw_test.png)  
 
 - calculator
-这里直接展示运行结果：  
+这里直接展示运行结果：   
 ![cal](../images/cal.png)  
 程序测试：  
 ![cal2](../images/cal_2.png)  
-![cal3](../images/cal3.png)  
+![cal3](../images/cal3.png)   
 ![cal4](../images/cal4.png)  
 
 
 
 - Robustness Test  
-由于 Java 本身就有很好的可移植性和鲁棒性，所以这一点没有造成很大的困扰，同样的程序我们放在云桌面上运行也是没有问题的：
+由于 Java 本身就有很好的可移植性和鲁棒性，所以这一点没有造成很大的困扰，同样的程序我们放在云桌面上运行也是没有问题的：  
 ![linux_ant](../images/linux_ant.png)
 
 
