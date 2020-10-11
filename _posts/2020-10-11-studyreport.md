@@ -55,7 +55,7 @@ java -version
 ![java_version](https://github.com/VarusJ/VarusJ.github.io/raw/master/_posts/2020-10-studyreport-images/java_version_win.png)   
 在笔记本上  
 ![java_version](https://github.com/VarusJ/VarusJ.github.io/raw/master/_posts/2020-10-studyreport-images/java_version_mac.png)  
-实训的 part1 更多的是在台式机上自己配置完成的。
+特别地，这次实训的 part1 更多的是在台式机上自己配置完成的。
 
 - Java 介绍  
 
@@ -242,7 +242,8 @@ JUnit 还给出了很多丰富的功能：赛程（Fixtures）、测试套件(Te
 
 - helloworld  
 上文已经有展示过 windows 命令行下用 Ant 的运行结果了，这里展示直接在 IDEA 的运行结果：   
-![hw](https://github.com/VarusJ/VarusJ.github.io/raw/master/_posts/2020-10-studyreport-images/helloworld.png)  
+![hw](https://github.com/VarusJ/VarusJ.github.io/raw/master/_posts/2020-10-studyreport-images/helloworld.png)    
+
 ![hw_test](https://github.com/VarusJ/VarusJ.github.io/raw/master/_posts/2020-10-studyreport-images/hw_test.png)  
 
 - calculator
