@@ -89,7 +89,7 @@ Java 是当前最火热的语言之一，常年制霸 TIOBE 榜榜首，它有�
 Ant 是 Java 的生成工具，类似于 Unix 中的 Make 工具用来编译、生成。在之前的操作系统、初级实现中我们是有学习过 Make 的（至今还记得读 GNU 的 manual 的痛苦），所以对于 Ant 的上手会相对容易一些。首先还是来看看环境的配置。
 - 环境配置  
 
-首先是从官网下载最新的版本 1.10.9 的压缩包，解压。完成之后，我们在环境变量中，把 ANT_HOME 设置为该解压后的文件夹路径，再将 path 里设置 %ANT_HOME%\bin 就可以完成环境变量的配置了。之后我们在命令中输入 ant -version 来检查是否配置成功，这里可以看到是成功了的：
+首先是从官网下载最新的版本 1.10.9 的压缩包，解压。完成之后，我们在环境变量中，把 ANT_HOME 设置为该解压后的文件夹路径，再将 path 里设置 %ANT_HOME%\bin 就可以完成环境变量的配置了。之后我们在命令中输入 ant -version 来检查是否配置成功，这里可以看到是成功了的：  
 ![ant_version](https://github.com/VarusJ/VarusJ.github.io/raw/master/_posts/2020-10-studyreport-images/ant_version.png)
 
 - Ant 尝试
@@ -193,7 +193,7 @@ JUnit是一个Java语言的单元测试框架，是属于 xUnit 的一个子集�
 
 如果测试运行平稳，JUnit将在条形图中显示测试进度，当测试失败时，它会变为红色。
 这个工具也不是完全陌生的了，之前课程中有用到不少，这里我也给出官方给出的 Manual 的地址: [JUnit_link][JUnit]。同样的，我们也不需要完全看完，我们看到导航栏有一个 basic usage，我们打开它可以进行最基础功能的学习。这里我展示一下我在 helloworld 里面所使用到的 test 的设计：
-```Java
+``` java
 package test.helloworld_part1;
 
 import helloworld_part1.helloworld;
