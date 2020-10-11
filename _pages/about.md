@@ -14,6 +14,7 @@ I love doing research, coding and making music.<br>
 
 Newly update
 ====
+* **09/29/2020** I became a member at a lab at SYSU supervised by Prof.Su. My desk is at National Supercomputer Center in Guangzhou 503.
 * **09/17/2020** Started my personal homepage~
 
 
