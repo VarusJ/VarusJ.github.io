@@ -21,7 +21,7 @@ Newly update
 Research experience
 =====
 In the autumn of 2020, I was a member of a lab at SYSU supervised by [Qinliang Su][su_bio]<br>
-In the summer of 2020, I remotely cooperated with [Manolis Kellis][kellis_bio] and completed my first paper, submitted, on Computational Biology. <br>
+In the summer of 2020, I remotely cooperated with [Manolis Kellis][kellis_bio] at MIT and completed my first paper, submitted, on Computational Biology. <br>
 I have been a lab assistant at HKUST Fok Ying Tung Research Institute supervised by [Yangqiu Song][song_bio] since Nov. 2019.<br>
 In the summer of 2019, I was a member of the summer camp at Institute of Automation, Chinese Academy of Sciences.<br>
 

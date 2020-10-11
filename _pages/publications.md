@@ -15,6 +15,6 @@ author_profile: true
   {% include archive-single.html %}
 {% endfor %} -->
 
-[2020] Variational Autoencoder for Anti-Cancer Drug Response Prediction  [arxiv][arxiv1]
+[2020] Variational Autoencoder for Anti-Cancer Drug Response Prediction (submitted) [arxiv][arxiv1]
 
 [arxiv1]:https://arxiv.org/abs/2008.09763
