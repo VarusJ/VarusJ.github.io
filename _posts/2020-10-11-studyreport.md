@@ -56,7 +56,7 @@ java -version
 可以查看是否安装成功，比如在我的台式机上  
 ![java_version](images/java_version_win.png)   
 在笔记本上  
-![java_version](images/java_version_mac.png)  
+![java_version](https://github.com/VarusJ/VarusJ.github.io/raw/master/_posts/2020-10-studyreport-images/java_version_mac.png)  
 实训的 part1 更多的是在台式机上自己配置完成的。
 
 - Java 介绍  
