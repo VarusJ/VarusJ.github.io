@@ -43,7 +43,7 @@ Ctrl+r: 重做上一个动作*
 
 特别地，因为这次实训的云桌面是 ubuntu，这里简单说一下怎么设置环境变量：相对方便的是直接修改 .bash_profile 文件，用文本编辑器（可以用上文说到的 Vi/Vim）打开用户目录下的 .bash_profile 文件，在末尾加入（第一行要改成实际地址）：
 ```shell
-export JAVA_HOME=/opt/jdk1.6.0_16
+export JAVA_HOME=/opt/jdk_xxxxx
 export PATH=$JAVA_HOME/bin:$PATH
 export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 ```
