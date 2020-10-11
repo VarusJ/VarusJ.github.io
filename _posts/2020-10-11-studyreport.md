@@ -10,9 +10,7 @@ tags:
 # Report-Part 1 
 ## 18342040 景致
 
-本报告为 part 1 总结学习
-
------
+This blog is a course report for Gridworld.
 
 **1. Vi/Vim 的学习**  
 
