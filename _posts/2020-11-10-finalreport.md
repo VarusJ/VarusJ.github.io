@@ -66,6 +66,172 @@ This blog is a course report for Gridworld.
       <img src="https://github.com/VarusJ/VarusJ.github.io/raw/master/_posts/finalreport-img/rockhound.gif" alt="zbug" width="45%"/> 
     </center>
 
+    + part5
+    这一部分我们需要做做一个 sparse bounded grid, unbounded grid，这个在之前演示中可以很轻松观察到。另外，本次实验还要求我们用 HashMap 或 TreeMap 改写 SparseBoundedGrid，代码如下：
+    ```java
+      package info.gridworld.withs3.grid;
+
+      import java.util.ArrayList;
+
+      public class SparseBoundedGrid<E> extends AbstractGrid<E> {
+
+          private final SparseGridNode[] occupantArray;
+          private final int numCols;
+          private final int numRows;
+
+          /**
+          * @Author varus
+          * @Description SparseBoundedGrid - constructor with the given dimensions
+          * @Date 9:11 上午 2020/10/20
+          * @Param [rows, cols - number of rows and columns in BoundedGrid]
+          */
+          public SparseBoundedGrid(int rows, int cols) {
+              if (rows <= 0)
+                  throw new IllegalArgumentException("rows <= 0");
+              if (cols <= 0)
+                  throw new IllegalArgumentException("cols <= 0");
+              numCols = cols;
+              numRows = rows;
+              occupantArray = new SparseGridNode[rows];
+          }
+
+          /**
+          * @return row number
+          * @Author varus
+          * @Description getNumRows - getter
+          * @Date 9:11 上午 2020/10/20
+          * @Param []
+          */
+          public int getNumRows() {
+              return numRows;
+          }
+
+          /**
+          * @return column number
+          * @Author varus
+          * @Description getNumCols - getter
+          * @Date 9:12 上午 2020/10/20
+          * @Param []
+          */
+          public int getNumCols() {
+              return numCols;
+          }
+
+          /**
+          * @return validity
+          * @Author varus
+          * @Description isValid - tests the validity of a location
+          * @Date 9:12 上午 2020/10/20
+          * @Param [loc]
+          */
+          public boolean isValid(Location loc) {
+              return 0 <= loc.getRow() && loc.getRow() < getNumRows() && 0 <= loc.getCol()
+                      && loc.getCol() < getNumCols();
+          }
+
+          /**
+          * @return an array list of occupied locations
+          * @Author varus
+          * @Description getOccupiedLocations - gets the occupied locations
+          * @Date 9:13 上午 2020/10/20
+          * @Param []
+          */
+          public ArrayList<Location> getOccupiedLocations() {
+              ArrayList<Location> theLocations = new ArrayList<Location>();
+              // checking all locations.
+              for (int r = 0; r < getNumRows(); r++) {
+                  SparseGridNode p = occupantArray[r];
+                  while (p != null)
+                  {
+                      Location loc = new Location(r, p.getColumn());
+                      theLocations.add(loc);
+                      p = p.getNext();
+                  }
+              }
+              return theLocations;
+          }
+
+          /**
+          * @return the object at loc
+          * @Author varus
+          * @Description get - gets the object at loc
+          * @Date 9:13 上午 2020/10/20
+          * @Param [loc]
+          */
+          public E get(Location loc) {
+              if (!isValid(loc))
+                  throw new IllegalArgumentException("Location " + loc + " is not valid");
+              SparseGridNode p = occupantArray[loc.getRow()];
+              while (p != null)
+              {
+                  if (loc.getCol() == p.getColumn())
+                      return (E) p.getOccupant();
+                  p = p.getNext();
+              }
+              return null;
+          }
+
+          /**
+          * @return the object put
+          * @Author varus
+          * @Description put - puts an object at loc
+          * @Date 9:16 上午 2020/10/20
+          * @Param [loc, obj]
+          */
+          public E put(Location loc, E obj) {
+              if (!isValid(loc))
+                  throw new IllegalArgumentException("Location " + loc + " is not valid");
+              if (obj == null)
+                  throw new NullPointerException("obj == null");
+              E oldOccupant = remove(loc);
+              SparseGridNode p = occupantArray[loc.getRow()];
+              occupantArray[loc.getRow()] = new SparseGridNode(obj,
+                      loc.getCol(), p);
+              return oldOccupant;
+          }
+
+          /**
+          * @return the object removed
+          * @Author varus
+          * @Description remove - removes the object at loc
+          * @Date 9:17 上午 2020/10/20
+          * @Param [loc]
+          */
+          public E remove(Location loc) {
+              // first check, then search and remove
+              if (!isValid(loc))
+                  throw new IllegalArgumentException("Location " + loc
+                          + " is not valid");
+              E obj = get(loc);
+              if (obj == null) return null;
+              SparseGridNode p = occupantArray[loc.getRow()];
+              if (p != null) {
+                  if (p.getColumn() == loc.getCol())
+                      occupantArray[loc.getRow()] = p.getNext();
+                  else {
+                      SparseGridNode q = p.getNext();
+                      while (q != null && q.getColumn() != loc.getCol()) {
+                          p = p.getNext();
+                          q = q.getNext();
+                      }
+                      if (q != null)
+                          p.setNext(q.getNext());
+                  }
+              }
+              return obj;
+          }
+      }
+    ```
+- **Stage3**   
+最后一个阶段是要求我们完成三个扩展任务：ImageProcessing，MazeBug，N-Puzzle，这部分我在 vmatrix 上的 readme 中有详细介绍，这里只展示成果：
+
+<center>
+  <img src="https://github.com/VarusJ/VarusJ.github.io/raw/master/_posts/finalreport-img/imgreader.png" alt="circlebug" width="45%"/>    
+  <img src="https://github.com/VarusJ/VarusJ.github.io/raw/master/_posts/finalreport-img/maze.png" alt="spiralbug" width="45%"/>   
+</center>
+
+
+这就是大三上学期经历的整个中级实训的报告了。总的来说，工作量很大，很具有挑战，同时我的收获也很多。
 
 
 
