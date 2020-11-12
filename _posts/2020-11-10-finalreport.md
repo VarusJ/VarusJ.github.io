@@ -32,15 +32,17 @@ This blog is a course report for Gridworld.
 
     以下是我完成的截图和gif???
     <center>
-      <img src="https://github.com/VarusJ/VarusJ.github.io/raw/master/_posts/finalreport-img/circlebug.png" alt="circlebug" width="45%"/>  
+      <img src="https://github.com/VarusJ/VarusJ.github.io/raw/master/_posts/finalreport-img/circlebug.png" alt="circlebug" width="45%"/>    
       <img src="https://github.com/VarusJ/VarusJ.github.io/raw/master/_posts/finalreport-img/spiralbug.png" alt="spiralbug" width="45%"/>   
-
-
-      Circle Bug & Spiral Bug
+      <img src="https://github.com/VarusJ/VarusJ.github.io/raw/master/_posts/finalreport-img/dancingbug.png" alt="dancingbug" width="45%"/> 
+      <img src="https://github.com/VarusJ/VarusJ.github.io/raw/master/_posts/finalreport-img/zbug.png" alt="zbug" width="45%"/> 
     </center>
+   
     
 
-
+<center>
+  <img src="https://github.com/VarusJ/VarusJ.github.io/raw/master/_posts/finalreport-img/jumper.png" alt="jumper" width="45%"/> 
+</center>
 
 
 
