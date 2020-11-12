@@ -35,6 +35,7 @@ This blog is a course report for Gridworld.
       <img src="https://github.com/VarusJ/VarusJ.github.io/raw/master/_posts/finalreport-img/circlebug.png" alt="circlebug" width="45%"/>  
       <img src="https://github.com/VarusJ/VarusJ.github.io/raw/master/_posts/finalreport-img/spiralbug.png" alt="spiralbug" width="45%"/>
 
+
       Circle Bug & Spiral Bug
     </center>
     
