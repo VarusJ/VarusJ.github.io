@@ -30,7 +30,7 @@ This blog is a course report for Gridworld.
       3. ZBug: move in a “Z” pattern, starting in the top left corner. After completing one “Z” pattern, a ZBug should stop moving.
       4. DancingBug: “dances” by making different turns before each move. 
 
-    以下是我完成的截图和gif???
+    以下是我完成的截图和gif: 
     <center>
       <img src="https://github.com/VarusJ/VarusJ.github.io/raw/master/_posts/finalreport-img/circlebug.gif" alt="circlebug" width="45%"/>    
       <img src="https://github.com/VarusJ/VarusJ.github.io/raw/master/_posts/finalreport-img/spiralbug.gif" alt="spiralbug" width="45%"/>   
@@ -38,11 +38,33 @@ This blog is a course report for Gridworld.
       <img src="https://github.com/VarusJ/VarusJ.github.io/raw/master/_posts/finalreport-img/zbug.gif" alt="zbug" width="45%"/> 
     </center>
    
-    
+    + part3  
+    这一部分，我们需要完成：  
+      1. Jumper: can move forward two cells in each move. It “jumps” over rocks and flowers. It does not leave anything behind it when it jumps.
 
-<center>
-  <img src="https://github.com/VarusJ/VarusJ.github.io/raw/master/_posts/finalreport-img/jumper.gif" alt="jumper" width="45%"/> 
-</center>
+    以下是我完成的截图和gif: 
+    <center>
+      <img src="https://github.com/VarusJ/VarusJ.github.io/raw/master/_posts/finalreport-img/jumper.gif" alt="jumper" width="45%"/> 
+      <img src="https://github.com/VarusJ/VarusJ.github.io/raw/master/_posts/finalreport-img/jumpertest.png" alt="jumpertest" width="45%"/>    
+    </center>
+
+    + part4  
+    这一部分，我们需要完成：  
+      1.  ChameleonKid: that extends ChameleonCritter as modified in exercise 1. A ChameleonKid changes its color to the color of one of the actors immediately in front or behind. If there is no actor in either of these locations, then the ChameleonKid darkens like the modified ChameleonCritter.
+      2. RockHound: that extends Critter. A RockHound gets the actors to be processed in the same way as a Critter. It removes any rocks in that list from the grid. A RockHound moves like a Critter.
+      3. BlusterCritter that extends Critter. A BlusterCritter looks at all of the neighbors within two steps of its current location. 
+      4. QuickCrab: that extends CrabCritter. A QuickCrab processes actors the same way a CrabCritter does. A QuickCrab moves to one of the two locations, randomly selected, that are two spaces to its right or left, if that location and the intervening location are both empty. Otherwise, a QuickCrab moves like a CrabCritter.
+      5. KingCrab: that extends CrabCritter. A KingCrab gets the actors to be processed in the same way a CrabCritter does. A KingCrab causes each actor that it processes to move one location further away from the KingCrab. If the actor cannot move away, the KingCrab removes it from the grid. When the KingCrab has completed processing the actors, it moves like a CrabCritter.
+
+
+    以下是我完成的截图和gif: 
+    <center>
+      <img src="https://github.com/VarusJ/VarusJ.github.io/raw/master/_posts/finalreport-img/bluster.gif" alt="circlebug" width="45%"/>    
+      <img src="https://github.com/VarusJ/VarusJ.github.io/raw/master/_posts/finalreport-img/chameleon.gif" alt="spiralbug" width="45%"/>   
+      <img src="https://github.com/VarusJ/VarusJ.github.io/raw/master/_posts/finalreport-img/king.gif" alt="dancingbug" width="45%"/> 
+      <img src="https://github.com/VarusJ/VarusJ.github.io/raw/master/_posts/finalreport-img/quick.gif" alt="zbug" width="45%"/> 
+      <img src="https://github.com/VarusJ/VarusJ.github.io/raw/master/_posts/finalreport-img/rockhound.gif" alt="zbug" width="45%"/> 
+    </center>
 
 
 
