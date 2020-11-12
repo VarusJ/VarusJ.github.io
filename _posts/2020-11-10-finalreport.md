@@ -21,10 +21,26 @@ This blog is a course report for Gridworld.
 本次实训第一阶段自学了 Vi/Vim, Java, Ant, Junit 的相关知识。首先认识并熟悉 Vi/Vim 的三种开发模式和基本使用方法，之后我们认识并熟悉了 Java 的使用，并要求实现 helloworld 和图形计算器，掌握利用 Ant 编译和运行项目的方法，最后是学会利用 Junit 实现对类方法的测试。这一部分的自学报告也在此目录下。  
 另外就是为之后的大项目进行一些预备工作 (part1)，这里是要求我们跑通 bug runner 的 demo，同时学会使用 sonar runner 来对代码风格进行检查。同时，我们需要基于对 bug runner 的观察回答一系列问题。
 
-- **Stage2**
+- **Stage2**  
+这个阶段的任务是完成有这若干功能的 bug 的实现，同时还要基于源代码的阅读和实验的观察回答一系列相关的问题。这个阶段一共分为了 4 个 part，每个 part 有对应的要求。  
+    + part2  
+    这一部分，我们需要完成：  
+      1. CircleBug: identical to BoxBug, except that in the act method the turn method is called once instead of twice
+      2. SpiralBug: drops flowers in a spiral pattern. Hint: Imitate BoxBug, but adjust the side length when the bug turns
+      3. ZBug: move in a “Z” pattern, starting in the top left corner. After completing one “Z” pattern, a ZBug should stop moving.
+      4. DancingBug: “dances” by making different turns before each move. 
 
-这个阶段的任务是完成有这若干功能的 bug 的实现，同时还要基于源代码的阅读和实验的观察回答一系列相关的问题。这个阶段一共分为了 4 个 part，每个 part 有对应的要求。
-- - part1
+    以下是我完成的截图和gif
+    <center>
+      <img src="finalreport-img/circlebug.png" alt="circlebug" width="45%"/>  
+      <img src="finalreport-img/spiralbug.png" alt="circlebug" width="45%"/>
+      
+      Circle Bug & Spiral Bug
+    </center>
+    
+
+
+
 
 
 
