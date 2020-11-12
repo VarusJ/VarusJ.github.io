@@ -223,7 +223,7 @@ This blog is a course report for Gridworld.
       }
     ```
 - **Stage3**   
-最后一个阶段是要求我们完成三个扩展任务：ImageProcessing，MazeBug，N-Puzzle，这部分我在 vmatrix 上的 readme 中有详细介绍，这里只展示成果：
+最后一个阶段是要求我们完成三个扩展任务：ImageProcessing，MazeBug，N-Puzzle，这部分我在 vmatrix 上的 readme 中有详细介绍，这里只展示成果（puzzle 无可视结果展示）：
 
 <center>
   <img src="https://github.com/VarusJ/VarusJ.github.io/raw/master/_posts/finalreport-img/imgreader.png" alt="circlebug" width="45%"/>    
