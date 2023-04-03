@@ -90,7 +90,27 @@
 
                         </p>
                         
-                        
+                        <p>
+                            <h2>Load Data</h2>
+                            We will use the MovieLens dataset to predict movie ratings. You can download the dataset from <a href="https://grouplens.org/datasets/movielens/">MovieLens website</a>.<br><br>
+
+                            We will use the ratings.csv file, which contains ratings of movies by users. The file has the following columns:<br>
+                            <ul>
+                                <li>userId: ID of the user who rated the movie</li>
+                                <li>movieId: ID of the movie that was rated</li>
+                                <li>rating: Rating given to the movie by the user (on a scale of 0.5 to 5)</li>
+                                <li>timestamp: Timestamp of when the rating was given (in seconds)</li>
+                            </ul>
+                            
+                            In addition to the ratings data, we will also use additional features for each movie, such as the movie's genres and release year. We will use the movies.csv file, which contains the following columns:<br>
+                            <ul>
+                                <li>movieId: ID of the movie</li>
+                                <li>title: Title of the movie</li>
+                                <li>genres: Genres of the movie (pipe-separated)</li>
+                                <li>year: Year the movie was released (in parentheses after the title)</li>
+                            </ul>
+                            We can load the data into pandas dataframes using the following code:
+                        </p>
                         
 
 
