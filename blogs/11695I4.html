@@ -14,6 +14,17 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            pre {
+                background-color: #f4f4f4;
+                border: 1px solid #ddd;
+                border-radius: 3px;
+                padding: 1em;
+                white-space: pre-wrap;
+                font-size: 14px;
+                font-family: "Courier New", Courier, monospace;
+            }
+        </style>
     </head>
     <body>
         <!-- Navigation-->
@@ -85,8 +96,7 @@
                                 <li>sklearn-deap</li>
                             </ul>  
                             You can install these libraries using <code>pip</code>. Run the following command in your terminal:
-                            <pre class="s-code-block language-python">pip install -r requirements.txt
-                            </pre>
+                            <code>pip install -r requirements.txt</code>
 
                         </p>
                         
@@ -110,6 +120,17 @@
                                 <li>year: Year the movie was released (in parentheses after the title)</li>
                             </ul>
                             We can load the data into pandas dataframes using the following code:
+                            <pre>
+                                <code>
+                                    import pandas as pd
+                                    
+                                    # Load ratings data
+                                    ratings_data = pd.read_csv('ratings.csv')
+
+                                    # Load movies data
+                                    movies_data = pd.read_csv('movies.csv')
+                                </code>
+                            </pre>
                         </p>
                         
 
