@@ -66,7 +66,7 @@
                             
                             Hyperparameter optimization is an important step in developing accurate machine learning models. Hyperparameters are settings that are not learned from data, but instead, are set manually or through optimization algorithms. For example, in linear regression, hyperparameters include the intercept and the normalization of the input features.<br><br>
                             
-                            sklearn-deap is a Python library that combines the popular machine learning library Scikit-learn with the evolutionary computation library DEAP (Distributed Evolutionary Algorithms in Python). Using sklearn-deap, you can apply evolutionary algorithms to optimize hyperparameters for machine learning models in Scikit-learn.<br><br>
+                            <b>Sklearn-deap</b> is a Python library that combines the popular machine learning library Scikit-learn with the evolutionary computation library DEAP (Distributed Evolutionary Algorithms in Python). Using sklearn-deap, you can apply evolutionary algorithms to optimize hyperparameters for machine learning models in Scikit-learn.<br><br>
                             
                             In this tutorial, we will use sklearn-deap to optimize the hyperparameters of a linear regression model for predicting movie ratings. We will use the MovieLens dataset, which contains movie ratings from the MovieLens website. We will use the ratings data along with additional features to predict movie ratings using linear regression. We will optimize hyperparameters such as the intercept and normalization using evolutionary algorithms from sklearn-deap.<br><br>
 
@@ -75,16 +75,20 @@
                             Setup
                         </h1>
                         <p>
-                            
                             First, let's set up our environment by installing the necessary libraries and loading the data.
-
                             <h2>Install Libraries</h2> 
                             We will need to install the following libraries:<br>
+                            <ul>
+                                <li>numpy</li>
+                                <li>pandas</li>
+                                <li>scikit-learn</li>
+                                <li>sklearn-deap</li>
+                            </ul>  
+                            You can install these libraries using <code>pip</code>. Run the following command in your terminal:
+                            <pre class="s-code-block language-html">
+                                pip install -r requirements.txt
+                            </pre>
 
-                            numpy<br>
-                            pandas<br>
-                            scikit-learn<br>
-                            sklearn-deap<br>
                         </p>
                         
                         
