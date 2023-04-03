@@ -152,7 +152,6 @@
         data[genre] = data['genres'].apply(lambda x: 1 if genre in x else 0)
                                 </code>
                             </pre>
-
                             This code first splits the <code>genres</code> column on the pipe character <code>|</code> to create a list of genres for each movie. It then uses the <code>explode()</code> method to create a new row for each genre associated with each movie. Finally, it creates a new binary feature column for each unique genre, where the value is 1 if the genre is associated with the movie and 0 otherwise.<br><br>
                             We can also extract the release year from the title column using regular expressions:
                             <pre>
@@ -161,8 +160,7 @@
     data['year'] = data['title'].str.extract('\((\d{4})\)')
                                 </code>
                             </pre>
-                            This code uses the <code>str.extract()</code> method with a regular expression pattern to extract the release year from the <code>title</code> column. The regular expression pattern <code>\((\d{4})\)</code> matches a four-digit number enclosed in parentheses. This pattern assumes that the release year is always enclosed in parentheses after the title.
-
+                            This code uses the <code>str.extract()</code> method with a regular expression pattern to extract the release year from the <code>title</code> column. The regular expression pattern <code>\((\d{4})\)</code> matches a four-digit number enclosed in parentheses. This pattern assumes that the release year is always enclosed in parentheses after the title.<br>
                             <h3>
                                 Split Data
                             </h3>
@@ -177,7 +175,7 @@
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
                                 </code>
                             </pre>
-                            This code first drops the unnecessary columns (<code>userId, movieId, title, genres, rating, timestamp, year</code>) from the <code>X</code> dataframe to create the feature matrix. It then separates the target variable (<code>rating</code>) into a separate y series. Finally, it uses the <code>train_test_split()</code> function from Scikit-learn to split the data into training and testing sets.
+                            This code first drops the unnecessary columns (<code>userId, movieId, title, genres, rating, timestamp, year</code>) from the <code>X</code> dataframe to create the feature matrix. It then separates the target variable (<code>rating</code>) into a separate y series. Finally, it uses the <code>train_test_split()</code> function from Scikit-learn to split the data into training and testing sets.<br>
                             <h2>
                                 Building the Model
                             </h2>
