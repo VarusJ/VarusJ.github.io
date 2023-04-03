@@ -126,7 +126,7 @@
                             <h2>
                                 Preprocessing Data
                             </h2>
-                            Before we can build our machine learning model, we need to preprocess the data. We will merge the ratings data with the movies data to create a single dataframe containing all the necessary features.<br>
+                            Before we can build our machine learning model, we need to preprocess the data. We will merge the ratings data with the movies data to create a single dataframe containing all the necessary features.<br><br>
                             <h3>
                                 Merge Data
                             </h3>
@@ -160,7 +160,7 @@
     data['year'] = data['title'].str.extract('\((\d{4})\)')
                                 </code>
                             </pre>
-                            This code uses the <code>str.extract()</code> method with a regular expression pattern to extract the release year from the <code>title</code> column. The regular expression pattern <code>\((\d{4})\)</code> matches a four-digit number enclosed in parentheses. This pattern assumes that the release year is always enclosed in parentheses after the title.<br>
+                            This code uses the <code>str.extract()</code> method with a regular expression pattern to extract the release year from the <code>title</code> column. The regular expression pattern <code>\((\d{4})\)</code> matches a four-digit number enclosed in parentheses. This pattern assumes that the release year is always enclosed in parentheses after the title.<br><br>
                             <h3>
                                 Split Data
                             </h3>
@@ -175,11 +175,11 @@
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
                                 </code>
                             </pre>
-                            This code first drops the unnecessary columns (<code>userId, movieId, title, genres, rating, timestamp, year</code>) from the <code>X</code> dataframe to create the feature matrix. It then separates the target variable (<code>rating</code>) into a separate y series. Finally, it uses the <code>train_test_split()</code> function from Scikit-learn to split the data into training and testing sets.<br>
+                            This code first drops the unnecessary columns (<code>userId, movieId, title, genres, rating, timestamp, year</code>) from the <code>X</code> dataframe to create the feature matrix. It then separates the target variable (<code>rating</code>) into a separate y series. Finally, it uses the <code>train_test_split()</code> function from Scikit-learn to split the data into training and testing sets.<br><br>
                             <h2>
                                 Building the Model
                             </h2>
-                            Now that we have preprocessed our data, we can build our machine learning model. We will use linear regression from Scikit-learn to predict movie ratings.
+                            Now that we have preprocessed our data, we can build our machine learning model. We will use linear regression from Scikit-learn to predict movie ratings.<br><br>
                             <h3>
                                 Train the Model
                             </h3>
@@ -193,7 +193,7 @@
     reg.fit(X_train, y_train)
                                 </code>
                             </pre>
-                            This code creates a new instance of the <code>LinearRegression</code> class and trains the model using the <code>fit()</code> method with the training data.
+                            This code creates a new instance of the <code>LinearRegression</code> class and trains the model using the <code>fit()</code> method with the training data.<br><br>
                             <h3>
                                 Test the Model
                             </h3>
@@ -210,11 +210,11 @@
                             </pre>
                             This code uses the <code>predict()</code> method to make predictions on the testing data and calculates the RMSE using the <code>mean_squared_error()</code> function from Scikit-learn.
 
-                            The RMSE is a measure of the difference between the predicted ratings and the actual ratings. The lower the RMSE, the better the model.
+                            The RMSE is a measure of the difference between the predicted ratings and the actual ratings. The lower the RMSE, the better the model.<br><br>
                             <h2>
                                 Optimizing Hyperparameters
                             </h2>
-                            Now that we have built and tested our linear regression model, we can try to optimize its hyperparameters to improve its performance. We will use the <b>sklearn-deap</b> library to perform a genetic algorithm search to find the best hyperparameters.
+                            Now that we have built and tested our linear regression model, we can try to optimize its hyperparameters to improve its performance. We will use the <b>sklearn-deap</b> library to perform a genetic algorithm search to find the best hyperparameters.<br><br>
                             <h3>
                                 Install and Import Libraries
                             </h3>
@@ -255,8 +255,7 @@
         return mse   
                                 </code>
                             </pre>
-                            This fitness function creates a pipeline with a <code>StandardScaler</code> and a linear regression model with the given hyperparameters. It then uses cross-validation with 5 folds to calculate the negative mean squared error (NMSE) of the model. The fitness of each candidate solution is the opposite of the NMSE (i.e., the lower the NMSE, the better the fitness).
-                            
+                            This fitness function creates a pipeline with a <code>StandardScaler</code> and a linear regression model with the given hyperparameters. It then uses cross-validation with 5 folds to calculate the negative mean squared error (NMSE) of the model. The fitness of each candidate solution is the opposite of the NMSE (i.e., the lower the NMSE, the better the fitness).<br><br>
                             <h3>
                                 Define Genetic Algorithm Parameters
                             </h3>
