@@ -73,7 +73,6 @@
                             <b>Sklearn-deap</b> is a Python library that combines the popular machine learning library Scikit-learn with the evolutionary computation library DEAP (Distributed Evolutionary Algorithms in Python). Using sklearn-deap, you can apply evolutionary algorithms to optimize hyperparameters for machine learning models in Scikit-learn.<br><br>
                             
                             In this tutorial, we will use sklearn-deap to optimize the hyperparameters of a linear regression model for predicting movie ratings. We will use the MovieLens dataset, which contains movie ratings from the MovieLens website. We will use the ratings data along with additional features to predict movie ratings using linear regression. We will optimize hyperparameters such as the intercept and normalization using evolutionary algorithms from sklearn-deap.<br><br>
-
                         </p>
                         <h1>
                             Setup
@@ -124,12 +123,10 @@
     movies_data = pd.read_csv('movies.csv')
                                 </code>
                             </pre>
-                            
                             <h2>
                                 Preprocessing Data
                             </h2>
-                            Before we can build our machine learning model, we need to preprocess the data. We will merge the ratings data with the movies data to create a single dataframe containing all the necessary features.
-
+                            Before we can build our machine learning model, we need to preprocess the data. We will merge the ratings data with the movies data to create a single dataframe containing all the necessary features.<br>
                             <h3>
                                 Merge Data
                             </h3>
